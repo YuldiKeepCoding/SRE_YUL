@@ -1,0 +1,18 @@
+# GitIgnore
+
+# Python
+__pycache__/
+.pytest_cache/
+
+# Coverage
+.coverage
+coverage_html_report/
+
+# Doc
+doc-html
+
+# Pytest
+pytest-report/
+
+# ENV
+venv/
