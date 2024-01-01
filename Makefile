@@ -3,10 +3,10 @@ PYTHON 	= $(VENV)/bin/python3
 PIP		= $(VENV)/bin/pip
 
 # Variables used to configure docker images
-IMAGE_REGISTRY_DOCKERHUB 	?= xoanmallon
+IMAGE_REGISTRY_DOCKERHUB 	?= yuldi8
 IMAGE_REGISTRY_GHCR			?= ghcr.io
-IMAGE_REPO					= keepcodingclouddevops8
-IMAGE_NAME					?= kc-8-liberando-productos-practica-final
+IMAGE_REPO					= YuldiKeepCoding
+IMAGE_NAME					?= SRE_YUL
 VERSION						?= develop
 
 # Variables used to configure docker images registries to build and push
@@ -35,6 +35,10 @@ $(VENV)/bin/activate: requirements.txt
 .PHONY: docker-build
 docker-build: ## Build image
 	docker build -t $(IMAGE) -t $(IMAGE_LATEST) -t $(IMAGE_GHCR) -t $(IMAGE_GHRC_LATEST) .
+
+.PHONY: publish-only-dockerhub
+publish-only-dockerhub: docker-build ## Publish main image only in DockerHub
+	docker push $(IMAGE)
 
 .PHONY: publish
 publish: docker-build ## Publish image
