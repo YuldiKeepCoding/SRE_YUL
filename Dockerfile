@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.10-alpine3.18
 
 WORKDIR /service/app
 ADD ./src/ /service/app/
@@ -6,6 +6,7 @@ COPY requirements.txt /service/app/
 
 RUN apk --no-cache add curl build-base npm
 RUN pip install -r requirements.txt
+RUN pip install --upgrade pip
 
 
 EXPOSE 8081
