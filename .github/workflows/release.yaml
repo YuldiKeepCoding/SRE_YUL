@@ -2,6 +2,8 @@ name: release-build
 
 on:
   push:
+    branches:
+      - main
     tags:
       - 'v*'
 
@@ -47,6 +49,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: |
-            DOCKER_METADATA_OUTPUT_VERSION
         
