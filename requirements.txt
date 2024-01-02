@@ -1,8 +1,8 @@
-fastapi==0.104.1
+fastapi==0.105.1
 hypercorn==0.15.0
 dnspython==2.4.2
 email-validator==2.1.0.post1
-pylint==2.13.4
+pylint==3.0.3
 pytest==7.4.3
 coverage==7.3.2
 pytest-cov==4.1.0
