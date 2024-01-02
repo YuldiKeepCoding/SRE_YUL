@@ -38,10 +38,9 @@ jobs:
             with:
               ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{raw}},value=${{ env.IMAGE_NAME }}
+            type=raw,value=latest
+
           
       - name: Build and push
         uses: docker/build-push-action@v5
@@ -52,6 +51,4 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: |
-            DOCKER_METADATA_OUTPUT_VERSION
         
