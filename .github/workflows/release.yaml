@@ -36,7 +36,7 @@ jobs:
         with:
           images: |
             with:
-              ${{ env.REGISTRY }}/${{ github.actor }}
+              ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=ref,event=branch
             type=ref,event=pr
