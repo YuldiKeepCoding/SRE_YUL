@@ -1,5 +1,3 @@
-name: Test
-
 on:
   pull_request:
     branches:
@@ -25,11 +23,17 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: "pip"
 
-      - name: Upgrade pip
-        run: pip3 install --upgrade pip
-
-      - name: Install python dependencies
-        run: pip3 install -r requirements.txt
+      - name: Install dependencies
+        run: | 
+          sudo apt-get update
+          sudo apt-get install python3-pip
+          python3 -m venv env
+          source env/bin/activate
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install --upgrade pip
 
       - name: Run unit-tests
-        run: pytest --cov
+        run: |
+          source env/bin/activate
+          pytest --cov
+          pytest --cov --cov-report=html
