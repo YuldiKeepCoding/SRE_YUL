@@ -21,6 +21,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      #   with:
+      #     fetch-depth: 0
+      
+      # - name: Get component version
+      #   run: |
+      #     echo "COMPONENT_VERSION=v$(echo ${{ github.event.release.name }} | awk -F '-v' '{print $NF}')" >> $GITHUB_ENV
+
+      # - name: Get component name
+      #   run: |
+      #     echo "COMPONENT_NAME=$(echo ${{ github.event.release.name }} | sed 's/-${{ env.COMPONENT_VERSION }}//')" >> $GITHUB_ENV
+
+      # - name: Check component name and component version
+      #   run: |
+      #     echo "COMPONENT_NAME: ${{ env.COMPONENT_NAME }}"
+      #     echo "COMPONENT_VERSION: ${{ env.COMPONENT_VERSION }}"
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
