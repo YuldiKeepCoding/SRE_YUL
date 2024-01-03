@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.0.0...v1.1.0) (2024-01-03)
+
+
+### Features
+
+*  cache-dependency-path ([6f18042](https://github.com/YuldiKeepCoding/SRE_YUL/commit/6f18042b46be7bf405047c38ab8c10d5703e260a))
+* cache nmp ([a039dc6](https://github.com/YuldiKeepCoding/SRE_YUL/commit/a039dc6a78d9092c776985436e93836ab0202ab9))
+* update node version & cache ([e159ea1](https://github.com/YuldiKeepCoding/SRE_YUL/commit/e159ea10969066bf4bf8c3b6891dcd1e554c4cfa))
+
 # 1.0.0 (2024-01-03)
 
 
