@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.1.0...v1.2.0) (2024-01-03)
+
+
+### Features
+
+* Prometheus ([03fe75b](https://github.com/YuldiKeepCoding/SRE_YUL/commit/03fe75b6707c3427fe5dda92b4d0af10b2560589))
+
 # [1.1.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.0.0...v1.1.0) (2024-01-03)
 
 
