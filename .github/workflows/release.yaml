@@ -86,8 +86,9 @@ jobs:
           images: |
               ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           
-      - name: Build and push
-        uses: docker/build-push-action@v5
+      - name: Build and Push on DockerHub
+        if: ${{ env.VERSION != '' }}
+        run: make publish
         with:
           context: .
           file: ./Dockerfile

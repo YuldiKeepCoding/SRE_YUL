@@ -36,10 +36,6 @@ $(VENV)/bin/activate: requirements.txt
 docker-build: ## Build image
 	docker build -t $(IMAGE) -t $(IMAGE_LATEST) -t $(IMAGE_GHCR) -t $(IMAGE_GHRC_LATEST) .
 
-.PHONY: publish-only-dockerhub
-publish-only-dockerhub: docker-build ## Publish main image only in DockerHub
-	docker push $(IMAGE)
-
 .PHONY: publish
 publish: docker-build ## Publish image
 	docker push $(IMAGE)
