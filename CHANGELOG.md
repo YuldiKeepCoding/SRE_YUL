@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.3.0...v1.4.0) (2024-01-04)
+
+
+### Features
+
+* Push DockHub 1.0.2 ([293b498](https://github.com/YuldiKeepCoding/SRE_YUL/commit/293b498d9902c486e407f4a162bd5f2fca41829c))
+
 # [1.3.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.2.0...v1.3.0) (2024-01-04)
 
 
