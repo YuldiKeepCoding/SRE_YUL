@@ -89,12 +89,6 @@ jobs:
       - name: Build and Push on DockerHub
         if: ${{ env.VERSION != '' }}
         run: make publish
-        with:
-          context: .
-          file: ./Dockerfile
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
         env:
           VERSION: ${{ env.VERSION }}
 
