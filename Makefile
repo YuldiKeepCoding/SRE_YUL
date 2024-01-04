@@ -5,8 +5,8 @@ PIP		= $(VENV)/bin/pip
 # Variables used to configure docker images
 IMAGE_REGISTRY_DOCKERHUB 	?= yuldi8
 IMAGE_REGISTRY_GHCR			?= ghcr.io
-IMAGE_REPO					= YuldiKeepCoding
-IMAGE_NAME					?= SRE_YUL
+IMAGE_REPO					= yuldiKeepCoding
+IMAGE_NAME					?= sre_yul
 VERSION						?= develop
 
 # Variables used to configure docker images registries to build and push
