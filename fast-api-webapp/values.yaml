@@ -5,32 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: xoanmallon/kc-devops-8-simple-fast-api
+  repository: yuldi8/sre_yul
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.2.0"
-
-# imagePullSecrets created to use Docker Hub Private Account
-imagePullSecrets:
-  - name: dockerhub-access
-
-# -- imageCredentials for DockerHub private account
-imageCredentials:
-  ## -- DockerHub registry URL
-  registry: "https://index.docker.io/v2/"
-  ## -- DockerHub account's username
-  username: ""
-  ## -- DockerHub account's token (only read permissions)
-  password: ""
-
-serviceAccount:
-  # Specifies whether a service account should be created
-  create: true
-  # Annotations to add to the service account
-  annotations: {}
-  # The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
-  name: ""
+  tag: latest
 
 podAnnotations: {}
 
