@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.4.0...v1.5.0) (2024-01-04)
+
+
+### Features
+
+* Push DockerHub 1.0 3 ([342ea0e](https://github.com/YuldiKeepCoding/SRE_YUL/commit/342ea0e7bf99662ec9e0d98ecf7acaac0b7133d5))
+
 # [1.4.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.3.0...v1.4.0) (2024-01-04)
 
 
