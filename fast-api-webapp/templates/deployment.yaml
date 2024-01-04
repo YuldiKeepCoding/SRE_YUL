@@ -29,14 +29,6 @@ spec:
       serviceAccountName: {{ include "fast-api-webapp.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
-      initContainers:
-        - name: wait-mongo
-          image: mongo:{{ .Values.mongodb.version }}
-          command: ['bin/bash']
-          args: ['-c', 'until [[ $(mongosh "${MONGODB_ADMIN_URL}" --quiet --eval "rs.status().ok") == 1 ]]; do echo waiting for mongodb to be ready; sleep 2; done']
-          envFrom:
-            - secretRef:
-                name: {{ include "fast-api-webapp.fullname" . }}-secret
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
