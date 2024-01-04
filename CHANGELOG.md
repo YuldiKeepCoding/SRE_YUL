@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.0.0...v1.1.0) (2024-01-04)
+
+
+### Features
+
+* Prometheus extress ([fc65453](https://github.com/YuldiKeepCoding/SRE_YUL/commit/fc6545392dddcd3659c0cf77093c6477eb665ac7))
+
 # 1.0.0 (2024-01-04)
 
 
