@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.2.0...v1.3.0) (2024-01-04)
+
+
+### Features
+
+* Push DockeHub ([4bb5d17](https://github.com/YuldiKeepCoding/SRE_YUL/commit/4bb5d175bb90dd2874a1068d721b0396f93d7b29))
+
 # [1.2.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.1.0...v1.2.0) (2024-01-03)
 
 
