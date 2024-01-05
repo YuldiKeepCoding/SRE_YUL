@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.1.0...v1.2.0) (2024-01-05)
+
+
+### Features
+
+* Grafana ([b270690](https://github.com/YuldiKeepCoding/SRE_YUL/commit/b270690e47de7e604fbbcd7e862768ef802cf7e5))
+
 # [1.1.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.0.0...v1.1.0) (2024-01-04)
 
 
