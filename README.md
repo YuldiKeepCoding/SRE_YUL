@@ -221,13 +221,8 @@ Se trata de una app creada en **Python** con [**FastAPI framework**](https://fas
         ```sh
         kubectl -n fast-api get pod -w
         ```
-    5.  Abrir una nueva pestaña en la terminal y ver como mientras en el HPA los targets estén por encima de los configurados como máximos se crean nuevos pods para la aplicación:
 
-        ```sh
-        kubectl -n fast-api get pod -w
-        ```
-
-    6.  Se debería recibir una notificación como la siguiente en el canal de Slack configurado para el envío de notificaciones sobre alarmas:
+    5.  Se debería recibir una notificación como la siguiente en el canal de Slack configurado para el envío de notificaciones sobre alarmas:
 
         > ![Alt text](./pics/Slack.png)
 
