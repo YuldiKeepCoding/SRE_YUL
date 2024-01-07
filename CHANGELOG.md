@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/YuldiKeepCoding/SRE_YUL/compare/v1.0.0...v1.1.0) (2024-01-07)
+
+
+### Features
+
+* Last change ([ede7adf](https://github.com/YuldiKeepCoding/SRE_YUL/commit/ede7adfd58ed42550f67ea5d7c6f209ae681d8f3))
+
 # 1.0.0 (2024-01-06)
 
 
